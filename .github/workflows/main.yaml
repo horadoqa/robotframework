@@ -26,26 +26,7 @@ jobs:
           wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
           sudo dpkg -i google-chrome-stable_current_amd64.deb
           sudo apt-get install -f
-          echo "------------------"
-          echo "VERSAO DO CHROME!!"
-          echo "------------------"
           google-chrome --version
-          echo "------------------"
-          echo " VERSAO DO ROBOT!!"
-          echo "------------------"
           robot --version
-          echo "------------------"
-          echo " Listar Arquivos  "
-          echo "------------------"
           pwd
-          echo "------------------"
-          echo "RODAR O ROBOT!!"
-          echo "------------------"
-          robot ./projetos/robot/robot.robot
-
-
-# [ WARN ] The chromedriver version (127.0.6533.119) detected in PATH at /usr/bin/chromedriver might not be compatible with the detected chrome version (128.0.6613.84); currently, chromedriver 128.0.6613.84 is recommended for chrome 128.*, so it is advised to delete the driver in PATH and retry
-# Cenário 1: Executar vídeo do site do youtube                          | FAIL |
-# SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
-#   (session not created: DevToolsActivePort file doesn't exist)
-#   (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+          ls -la

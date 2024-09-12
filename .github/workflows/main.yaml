@@ -30,6 +30,17 @@ jobs:
           echo "VERSAO DO CHROME!!"
           echo "------------------"
           google-chrome --version
+          echo "------------------"
+          echo " VERSAO DO ROBOT!!"
+          echo "------------------"
+          robot --version
+          echo "------------------"
+          echo " Listar Arquivos  "
+          echo "------------------"
+          ls -la
+          echo "------------------"
+          echo "RODAR O ROBOT!!"
+          echo "------------------"
           robot ./projetos/robot/robot.robot
 
 

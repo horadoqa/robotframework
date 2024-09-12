@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.10.12 on linux)" generated="2024-08-22T16:42:49.930101" rpa="false" schemaversion="5">
+<suite id="s1" name="Robot-Framework" source="/home/rfahham/projetos/robot-framework">
+<suite id="s1-s1" name="Projetos" source="/home/rfahham/projetos/robot-framework/projetos">
+<suite id="s1-s1-s1" name="Google-Globo" source="/home/rfahham/projetos/robot-framework/projetos/google-globo">
+<suite id="s1-s1-s1-s1" name="Google" source="/home/rfahham/projetos/robot-framework/projetos/google-globo/google.robot">
+<test id="s1-s1-s1-s1-t1" name="Cenario 1: Test Google" line="13">
+<kw name="Open Google site">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-22T16:42:50.126792" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
+<arg>--{url_google}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-22T16:42:50.126272" elapsed="3.267276"/>
+</kw>
+<status status="PASS" start="2024-08-22T16:42:50.125160" elapsed="3.269520"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-08-22T16:42:53.395263" elapsed="0.061946"/>
+</kw>
+<status status="PASS" start="2024-08-22T16:42:50.124326" elapsed="3.333541"/>
+</test>
+<status status="PASS" start="2024-08-22T16:42:49.980905" elapsed="3.480125"/>
+</suite>
+<status status="PASS" start="2024-08-22T16:42:49.977614" elapsed="3.487250"/>
+</suite>
+<status status="PASS" start="2024-08-22T16:42:49.975430" elapsed="3.492381"/>
+</suite>
+<status status="PASS" start="2024-08-22T16:42:49.948245" elapsed="3.531562"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot-Framework">Robot-Framework</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Projetos">Robot-Framework.Projetos</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Google-Globo">Robot-Framework.Projetos.Google-Globo</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="Google">Robot-Framework.Projetos.Google-Globo.Google</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

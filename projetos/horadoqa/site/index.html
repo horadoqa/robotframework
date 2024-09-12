@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    
+        <div>
+            <img src="./images/hqa.png">
+        </div>
+
+        <h1>Hora do QA</h1>
+
+        <div>
+            <h3>Choose your favorite tool</h3>
+            <select name="select-itens" id="select-itens">
+                <option value="first-item">Cypress</option>
+                <option value="second-item">Selenium</option>
+                <option value="third-item">Robot Framework</option>
+                <option value="third-item">Cucumber</option>
+            </select>
+        </div>
+
+        <div>
+            <h3>Tell us something about your choose</h3>
+            <textarea name="area" id="area" placeholder="Enter your text here"></textarea>
+        </div>
+
+        <h3>Fill in your details</h3>
+
+        <div>
+            <form action="thank.html">
+                <label for="fname">Your Full Name</label><br/>
+                <input type="text" id="fname" name="firstname" placeholder="Your name.."><br/>
+                
+                <label for="email">Your best e-mail</label><br/>
+                <input type="text" id="email" name="email" placeholder="Your e-mail.."><br/>
+
+                <label for="phone">Phone Number</label><br/>
+                <input type="text" id="phone" name="phonenumber" placeholder="Your phone number.."><br/>
+
+                <label for="country">Select Your Country</label><br/>
+                <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+                <option value="br">Brasil</option>
+                </select>
+            
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

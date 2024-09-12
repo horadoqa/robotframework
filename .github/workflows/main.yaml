@@ -28,5 +28,4 @@ jobs:
           sudo apt-get install -f
           google-chrome --version
           robot --version
-          pwd
-          ls -la
+          robot --help

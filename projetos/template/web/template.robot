@@ -15,6 +15,7 @@ ${locator_}    //div[@href="https://"]
 Abrir site
     Open Browser    ${abrir_site}    ${browser}
     Maximize Browser Window
+    
 Próximos passos
     Click Element    locator
     Input Text    locator    text=

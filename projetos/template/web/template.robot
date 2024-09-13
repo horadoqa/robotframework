@@ -32,7 +32,7 @@ Fechar site
     Close Browser
 
 ** Test Cases **
-Cenário: X
+Cenário: x
     Abrir site
     Próximos passos
     Verificar

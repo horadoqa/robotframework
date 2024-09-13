@@ -3,53 +3,38 @@ Library  SeleniumLibrary
 
 ** Variables **
 
-${url_site}    https://amazon.com.br
-${browser}    chrome
+${url}    https://www.amazon.com.br/
 ${locator_MacBook_Air}    //*[@id="twotabsearchtextbox"]
 ${locator_buscar}    //*[@id="nav-search-submit-button"]
-${locator_escolha}    //span[contains(text(),"Apple notebook MacBook Air de 13 polegadas: Chip M2 da Apple com CPU de oito núcleos e GPU de dez núcleos, de 512 GB SSD - Cinza espacial")]
+${locator_escolha}    //span[contains(text(),"Apple 2024 MacBook Air (de 13 polegadas, Chip M3 da Apple com CPU de oito núcleos e GPU de oito núcleos, 8GB Memória unificada, de 256 GB) - Cinza-espacial")]
+${locator_comprar}    //*[@id="buy-now-button"]
 ${validar}    //h1[contains(text()," Fazer login")]
 
-
-# ${locator_}    //h1[contains(text(),"Fazer Login")]
-# ${locator_}    //div[@id="Text"]
-# ${locator_}    (//div[@class="Text"])[1]
-# ${locator_}    //div[@placeholder="Text"]
-# ${locator_}    //div[@href="https://"]
-
-# Input Test    Element    text=
-# Click Element
-# Sleep     5s
-
 ** Keywords **
+
 Abrir site
-    Open Browser    ${url_site}    ${browser}
+    Open Browser    ${url}    chrome
 
 Pesquisar por MacBook_Air
     Input Text    ${locator_MacBook_Air}    text=Apple 2024 MacBook Air de 13 polegadas, Chip M3
     Click Element    ${locator_buscar}
-    Sleep     10s
-
-Clicar em MacBook Air
-    Click Element    /span[contains(text(),"MacBook Air")]
 
 Clicar na escolha
     Click Element    ${locator_escolha}
-    Sleep     5s
 
 Comprar agora
-    Click Element     //*[@id="buy-now-button"]
-    Sleep    5s
+    Click Element    ${locator_comprar}
 
 Verificar
     Wait Until Element Is Visible    ${validar}    10
     Element Should Be Visible    ${validar}
+    Sleep    5s
 
-Fechar site
+Fechar Site
     Close Browser
 
 ** Test Cases **
-Cenário: X
+Cenário: Simular uma compra na Amazon
     Abrir site
     Pesquisar por MacBook_Air
     Clicar na escolha

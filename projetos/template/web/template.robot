@@ -10,18 +10,19 @@ ${locator_}    //div[@id="Text"]
 ${locator_}    (//div[@class="Text"])[1]
 ${locator_}    //div[@placeholder="Text"]
 ${locator_}    //div[@href="https://"] 
+${fechar_site}    Close Browser
 
 ** Keywords **
 Abrir site
     Open Browser    ${abrir_site}    ${browser}
     Maximize Browser Window
-    
+
 Próximos passos
-    Click Element    locator
-    Input Text    locator    text=
+    Click Element    ${locator_}
+    Input Text    ${locator_}    text=
 
 Fechar site
-    Close Browser
+    ${fechar_site}
 
 ** Test Cases **
 Cenário: X

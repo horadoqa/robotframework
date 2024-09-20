@@ -5,7 +5,10 @@
 - python
 - pip
 - robot
-- biblioteca
+- bibliotecas
+- google ("O google-chrome e o chromedriver precisam estar sempre na mesma versão")
+    - google-chrome
+    - chromedriver
 
 ### Python
 
@@ -80,6 +83,35 @@ https://pypi.org/project/webdriver-manager/3.0.0/
 
 ```bash
 sudo pip install webdriver-manager 
+```
+
+## google-chrome
+
+```bash
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && \
+sudo apt install ./google-chrome-stable_current_amd64.deb && \
+google-chrome --version
+```
+
+## chromedriver
+
+```bash
+wget https://storage.googleapis.com/chrome-for-testing-public/129.0.6668.58/linux64/chromedriver-linux64.zip
+unzip chromedriver-linux64.zip
+chmod +x chromedriver
+sudo cp chromedriver /usr/bin/
+```
+
+Se o local do seu driver ainda não estiver em um diretório listado, você pode adicionar um novo diretório ao PATH:
+
+```bash
+echo 'export PATH=$PATH:/usr/bin/chromedriver' >> ~/.zshenv
+```
+
+Atualizar o MYOHZSH
+
+```bash
+source ~/.zshenv
 ```
 
 ### Instalar a extensão do ROBOT para o VSCODE

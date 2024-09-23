@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.10.12 on linux)" generated="2024-09-23T11:46:50.208186" rpa="false" schemaversion="5">
+<suite id="s1" name="Horadoqa" source="/home/rfahham/projetos/robotframework/projetos/horadoqa/src/tests/horadoqa.robot">
+<test id="s1-t1" name="Cenário1: Enviar dados pelo site" line="46">
+<kw name="Given que o usuário acessou o site">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-23T11:46:50.395316" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:5500/src/fe/index.html'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-23T11:46:50.394956" elapsed="0.650987"/>
+</kw>
+<status status="PASS" start="2024-09-23T11:46:50.394177" elapsed="0.652090"/>
+</kw>
+<kw name="And escolheu um item da lista de frameworks">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-23T11:46:51.048097" level="INFO">Clicking element '//*[@id="select-itens"]/option[3]'.</msg>
+<arg>${frameworks}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T11:46:51.047456" elapsed="0.078815"/>
+</kw>
+<status status="PASS" start="2024-09-23T11:46:51.046745" elapsed="0.079799"/>
+</kw>
+<kw name="And digitou algo sobre a escolha">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-23T11:46:51.128222" level="INFO">Typing text 'Robot Framework is an open source automation framework for test automation and robotic process automation (RPA).' into text field '//*[@id="area"]'.</msg>
+<arg>//*[@id="area"]</arg>
+<arg>text=Robot Framework is an open source automation framework for test automation and robotic process automation (RPA).</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T11:46:51.127897" elapsed="0.194979"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-23T11:46:56.323670" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-23T11:46:51.323133" elapsed="5.000709"/>
+</kw>
+<status status="PASS" start="2024-09-23T11:46:51.127145" elapsed="5.196872"/>
+</kw>
+<kw name="And inseriu os dados pessoais">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-23T11:46:56.325220" level="INFO">Typing text 'Ricardo Fahham' into text field '//*[@id="name"]'.</msg>
+<arg>//*[@id="name"]</arg>
+<arg>Ricardo Fahham</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T11:46:56.324897" elapsed="0.114698"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-23T11:46:56.440179" level="INFO">Typing text 'rfahham@hotmail.com' into text field '//*[@id="email"]'.</msg>
+<arg>//*[@id="email"]</arg>
+<arg>rfahham@hotmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T11:46:56.439893" elapsed="0.110773"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-23T11:46:56.551649" level="INFO">Typing text '21982227843' into text field '//*[@id="phone"]'.</msg>
+<arg>//*[@id="phone"]</arg>
+<arg>21982227843</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T11:46:56.551167" elapsed="0.107127"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-23T11:47:01.658886" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-23T11:46:56.658510" elapsed="5.000547"/>
+</kw>
+<status status="PASS" start="2024-09-23T11:46:56.324493" elapsed="5.334735"/>
+</kw>
+<kw name="And informou o país de origem">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-23T11:47:01.660062" level="INFO">Clicking element '//*[@id="country"]/option[4]'.</msg>
+<arg>//*[@id="country"]/option[4]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T11:47:01.659855" elapsed="0.033598"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-23T11:47:06.694566" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-23T11:47:01.693753" elapsed="5.001317"/>
+</kw>
+<status status="PASS" start="2024-09-23T11:47:01.659556" elapsed="5.036018"/>
+</kw>
+<kw name="And clicar em &quot;Send&quot;">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-23T11:47:06.699230" level="INFO">Clicking element '//*[@id="submitButton"]'.</msg>
+<arg>//*[@id="submitButton"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T11:47:06.698358" elapsed="0.183590"/>
+</kw>
+<status status="PASS" start="2024-09-23T11:47:06.697075" elapsed="0.185257"/>
+</kw>
+<kw name="And a mensagem de confirmação será exibida">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${verificação}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-23T11:47:06.883943" elapsed="0.027994"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-09-23T11:47:06.939708" level="INFO">Element '//h1[contains(text(), "Obrigado por sua participação !!!")]' is displayed.</msg>
+<arg>${verificação}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-23T11:47:06.912175" elapsed="0.028009"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-23T11:47:11.941202" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-23T11:47:06.940725" elapsed="5.000618"/>
+</kw>
+<status status="PASS" start="2024-09-23T11:47:06.883038" elapsed="5.058441"/>
+</kw>
+<kw name="Then o site será fechado">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-09-23T11:47:11.942115" elapsed="0.099822"/>
+</kw>
+<status status="PASS" start="2024-09-23T11:47:11.941790" elapsed="0.100310"/>
+</kw>
+<status status="PASS" start="2024-09-23T11:46:50.392424" elapsed="21.649917"/>
+</test>
+<status status="PASS" start="2024-09-23T11:46:50.209115" elapsed="21.833807"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Horadoqa">Horadoqa</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

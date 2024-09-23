@@ -4,9 +4,9 @@ Library  SeleniumLibrary
 
 *** Variables ***
 
-${url}    http://127.0.0.1:5500/site/index.html
+${url}    http://127.0.0.1:5500/src/fe/index.html
 ${frameworks}    //*[@id="select-itens"]/option[3]
-${verificação}    //h1[contains(text(), "Thank you for your participation!")]
+${verificação}    //h1[contains(text(), "Obrigado por sua participação !!!")]
 
 
 *** Keywords ***
@@ -15,6 +15,7 @@ Given que o usuário acessou o site
 
 And escolheu um item da lista de frameworks
     Click Element    ${frameworks}
+    Sleep    5s
 
 And digitou algo sobre a escolha
     Input Text    //*[@id="area"]    text=Robot Framework is an open source automation framework for test automation and robotic process automation (RPA).
@@ -24,14 +25,14 @@ And inseriu os dados pessoais
     Input Text    //*[@id="name"]    Ricardo Fahham
     Input Text    //*[@id="email"]    rfahham@hotmail.com
     Input Text    //*[@id="phone"]    21982227843
-    Sleep    5s
 
 And informou o país de origem
     Click Element   //*[@id="country"]/option[4]
     Sleep    5s
 
-And clicar em "Send"
-    Click Element    //*[@id="submit-button"]
+And clicar em "Enviar"
+    Click Element    //*[@id="submitButton"]
+    Sleep    5s
 
 And a mensagem de confirmação será exibida
     Wait Until Element Is Visible    ${verificação}    10
@@ -49,7 +50,7 @@ Cenário1: Enviar dados pelo site
     And digitou algo sobre a escolha
     And inseriu os dados pessoais
     And informou o país de origem
-    And clicar em "Send"
+    And clicar em "Enviar"
     And a mensagem de confirmação será exibida
     Then o site será fechado
 

@@ -4,14 +4,14 @@ Library  SeleniumLibrary
 
 *** Variables ***
 
-${url}           http://127.0.0.1:5500/site/index.html
+${url}           http://127.0.0.1:5500/src/fe/index.html
 ${frameworks}    //*[@id="select-itens"]/option[3]
-${text}          //*[@id="area"]    text=Robot Framework is an open source automation framework for test automation and robotic process automation (RPA).
-${nome}          //*[@id="name"]    Ricardo Fahham
-${e-mail}        //*[@id="email"]    rfahham@hotmail.com
-${telefone}      //*[@id="phone"]    21982227843
+${text}          //*[@id="area"]    
+${nome}          //*[@id="name"]    
+${e-mail}        //*[@id="email"]    
+${telefone}      //*[@id="phone"]    
 ${país}          //*[@id="country"]/option[4]
-${verificação}   //h1[contains(text(), "Thank you for your participation!")]
+${verificação}   //h1[contains(text(), "Obrigado por sua participação !!!")]
 
 
 *** Keywords ***
@@ -20,23 +20,24 @@ Given que o usuário acessou o site
 
 And escolheu um item da lista de frameworks
     Click Element    ${frameworks}
+    Sleep    5s
 
 And digitou algo sobre a escolha
-    Input Text    ${text}
+    Input Text    ${text}    text=Robot Framework is an open source automation framework for test automation and robotic process automation (RPA).
     Sleep    5s
 
 And inseriu os dados pessoais
-    Input Text    ${nome}
-    Input Text    ${e-mail}
-    Input Text    ${telefone}
-    Sleep    5s
+    Input Text    ${nome}    Ricardo Fahham
+    Input Text    ${e-mail}    horadoqa@gmail.com
+    Input Text    ${telefone}    219876543210
 
 And informou o país de origem
     Click Element   ${país}
     Sleep    5s
 
-And clicar em "Send"
-    Click Element    //*[@id="submit-button"]
+And clicar em "Enviar"
+    Click Element    //*[@id="submitButton"]
+    Sleep    60s
 
 And a mensagem de confirmação será exibida
     Wait Until Element Is Visible    ${verificação}    10

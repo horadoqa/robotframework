@@ -9,7 +9,7 @@ Cenário1: Enviar dados pelo site
     And digitou algo sobre a escolha
     And inseriu os dados pessoais
     And informou o país de origem
-    And clicar em "Send"
+    And clicar em "Enviar"
     And a mensagem de confirmação será exibida
     Then o site será fechado
 
@@ -19,6 +19,6 @@ Cenário1: Enviar dados pelo site
 #     E digitou algo sobre a escolha
 #     E inseriu os dados pessoais
 #     E informou o país de origem
-#     Quando clicar em "Send"
+#     Quando clicar em "Enviar"
 #     E a mensagem de confirmação será exibida
 #     Então o site será fechado

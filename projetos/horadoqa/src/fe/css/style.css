@@ -5,10 +5,15 @@
 
 body {
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Tahoma, sans-serif;
     font-size: 20px;
     background-color: rgb(32, 32, 32);
     color: aliceblue;
+}
+
+img {
+    margin-bottom: -50px; /* Espaço entre a imagem e o texto */
+    width: 200px; /* Ajuste o tamanho da imagem conforme necessário */
 }
 
 input[type=text], select {

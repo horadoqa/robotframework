@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <link rel="shortcut icon" type="imagex/png" href="./images/hqa.ico">
+    <title>Hora do QA</title>
 </head>
 <body>
     <div class="container">
@@ -18,10 +19,10 @@
         <div>
             <h3>Choose your favorite tool</h3>
             <select name="select-itens" id="select-itens">
-                <option value="first-item">Cypress</option>
-                <option value="second-item">Selenium</option>
-                <option value="third-item">Robot Framework</option>
-                <option value="third-item">Cucumber</option>
+                <option value="1">Cypress</option>
+                <option value="2">Selenium</option>
+                <option value="3">Robot Framework</option>
+                <option value="4">Cucumber</option>
             </select>
         </div>
 
@@ -34,8 +35,8 @@
 
         <div>
             <form action="thank.html">
-                <label for="fname">Your Full Name</label><br/>
-                <input type="text" id="fname" name="firstname" placeholder="Your name.."><br/>
+                <label for="name">Your Full Name</label><br/>
+                <input type="text" id="name" name="firstname" placeholder="Your name.."><br/>
                 
                 <label for="email">Your best e-mail</label><br/>
                 <input type="text" id="email" name="email" placeholder="Your e-mail.."><br/>
@@ -48,10 +49,11 @@
                 <option value="australia">Australia</option>
                 <option value="canada">Canada</option>
                 <option value="usa">USA</option>
-                <option value="br">Brasil</option>
+                <option value="brasil">Brasil</option>
                 </select>
             
-                <input type="submit" value="Submit">
+                <!-- <input type="submit" value="Submit"> -->
+                <button id="submit-button">Send</button>
             </form>
         </div>
     </div>

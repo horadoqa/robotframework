@@ -4,7 +4,7 @@ Library  SeleniumLibrary
 
 *** Variables ***
 
-${url}    http://127.0.0.1:5500/src/fe/index.html
+${url}    http://127.0.0.1:5501/projetos/horadoqa/src/fe/index.html
 ${frameworks}    //*[@id="select-itens"]/option[3]
 ${verificação}    //h1[contains(text(), "Obrigado por sua participação !!!")]
 
@@ -22,9 +22,9 @@ And digitou algo sobre a escolha
     Sleep    5s
 
 And inseriu os dados pessoais
-    Input Text    //*[@id="name"]    Ricardo Fahham
-    Input Text    //*[@id="email"]    rfahham@hotmail.com
-    Input Text    //*[@id="phone"]    21982227843
+    Input Text    //*[@id="name"]    Hora do qa 4
+    Input Text    //*[@id="email"]    horadoqa4@hotmail.com
+    Input Text    //*[@id="phone"]    219876543210
 
 And informou o país de origem
     Click Element   //*[@id="country"]/option[4]

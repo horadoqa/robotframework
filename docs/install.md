@@ -116,6 +116,9 @@ source ~/.zshenv
 
 ### Instalar a extensão do ROBOT para o VSCODE
 
-No vscode procurar por `Robot Framework Language Server`
+No vscode procurar por:
+
+- Robot Framework Language Server
+- Robot Code (Daniel Biehl)
 
 Próximo passo... [Estrutura do ROBOT](estrutura.md)

@@ -1,0 +1,86 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1a1a1a; /* Fundo escuro */
+    margin: 0;
+    position: relative; /* Para o pseudo-elemento */
+    overflow: hidden; /* Para esconder o conteúdo que sai da tela */
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 50% 20%, rgba(0, 255, 0, 0.2) 0%, rgba(0, 255, 0, 0.1) 70%, rgba(0, 0, 0, 0.8) 100%),
+                radial-gradient(circle at 20% 40%, rgba(255, 0, 255, 0.2) 0%, rgba(255, 0, 255, 0.1) 70%, rgba(0, 0, 0, 0.8) 100%),
+                radial-gradient(circle at 80% 60%, rgba(255, 165, 0, 0.2) 0%, rgba(255, 165, 0, 0.1) 70%, rgba(0, 0, 0, 0.8) 100%);
+    opacity: 0.6; /* Transparência dos efeitos */
+    z-index: 1; /* Ficar abaixo do conteúdo */
+}
+
+.login-container {
+    position: relative; /* Para que fique acima do fundo */
+    background: rgba(255, 255, 255, 0.1); /* Fundo branco com leve transparência */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    width: 300px; /* Ajustar a largura */
+    text-align: center; /* Centralizar texto */
+    z-index: 2; /* Ficar acima do fundo */
+}
+
+h2 {
+    color: #fff; /* Branco */
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Coloca o texto em maiúsculas */
+}
+
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 20px); /* Proporcional às bordas */
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc; /* Cinza claro */
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #fff; /* Branco ao focar */
+    outline: none; /* Remove a borda padrão do navegador */
+}
+
+button {
+    width: auto; /* Botão menor */
+    padding: 10px 20px;
+    background-color: #555; /* Cinza escuro */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    float: right; /* Alinhar à direita */
+}
+
+button:hover {
+    background-color: #777; /* Cinza mais claro ao passar o mouse */
+}
+
+#error-message {
+    color: red; /* Vermelho para mensagens de erro */
+    margin-top: 10px;
+    display: none; /* Oculta inicialmente */
+}
+
+#error-message.error {
+    display: block; /* Exibe mensagem de erro quando houver erro */
+}

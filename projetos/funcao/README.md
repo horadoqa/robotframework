@@ -1,9 +1,11 @@
 # Criando um projeto utilizando uma função com Faker
 
+https://pypi.org/project/robotframework-faker/
+
 ## Instalando bibliotcas
 
 ```bash
-pip install Faker robotframework
+pip install robotframework-faker
 ```
 
 ## VErificando instalação do FAKER
@@ -38,14 +40,19 @@ Requires:
 Required-by: robotframework-assertion-engine, robotframework-browser, robotframework-seleniumlibrary
 ```
 
+```bash
+pip show robotframework-fakerpip show robotframework-faker
+Name: robotframework-faker
+Version: 5.0.0
+Summary: Robot Framework wrapper for faker, a fake test data generator
+Home-page: https://github.com/guykisel/robotframework-faker
+Author: Guy Kisel
+Author-email: guy.kisel@gmail.com
+License: MIT
+Location: /home/rfahham/.local/lib/python3.10/site-packages
+Requires: faker, robotframework, wrapt
+Required-by: 
+```
+
 ## Configurando o robot.pythonpath
 
-Se você está usando um editor como o Visual Studio Code, você pode precisar adicionar o diretório onde faker_library.py está localizado ao caminho do Python no Robot Framework.
-
-No seu arquivo settings.json do projeto, você pode adicionar:
-
-json
-Copiar código
-"robot.pythonpath": [
-    "./path/para/seu/diretorio"
-]

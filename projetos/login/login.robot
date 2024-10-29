@@ -17,19 +17,19 @@ Abrir site
     Open Browser    ${url_site}    ${browser}
     # Maximize Browser Window
 
-Não inserir dados
+Campo Vazio
     Sleep    3s
-    Click Element    ${locator_username}
-    Input Text    ${locator_username}    text=
-    Click Element    ${locator_password}
-    Input Text    ${locator_password}    text=
+    # Click Element    ${locator_username}
+    # Input Text    ${locator_username}    text=
+    # Click Element    ${locator_password}
+    # Input Text    ${locator_password}    text=
     Click Element    ${locator_button}
     Sleep    3s
     Wait Until Element Is Visible    ${error_dados_vazios}    5
     Element Should Be Visible    ${error_dados_vazios}
     Sleep    3s
 
-Inserir e-mail válido mas senha inválida
+E-mail Válido e Senha Inválida
     Click Element    ${locator_username}
     Input Text    ${locator_username}    text=usuario@example.com
     Click Element    ${locator_password}
@@ -40,7 +40,7 @@ Inserir e-mail válido mas senha inválida
     Element Should Be Visible    ${error_dados_errados}
     Sleep    3s
 
-Inserir e-mail inválido mas senha válida
+E-mail Inválido e Senha Válida
     Click Element    ${locator_username}
     Input Text    ${locator_username}    text=usuarioexamplecom
     Click Element    ${locator_password}
@@ -51,7 +51,7 @@ Inserir e-mail inválido mas senha válida
     Element Should Be Visible    ${error_dados_errados}
     Sleep    3s
 
-Inserir e-mail e senha inválidos
+Ambos Inválidos
     Click Element    ${locator_username}
     Input Text    ${locator_username}    text=usuarioexample.com
     Click Element    ${locator_password}
@@ -62,7 +62,7 @@ Inserir e-mail e senha inválidos
     Element Should Be Visible    ${error_dados_errados}
     Sleep    3s
 
-Inserir e-mail e senha válidos
+Ambos Válidos
     Click Element    ${locator_username}
     Input Text    ${locator_username}    text=usuario@example.com
     Click Element    ${locator_password}
@@ -77,27 +77,27 @@ Fechar site
     Close Browser
 
 ** Test Cases **
-Cenário 1: Dados Vazios
+Cenário 1: Campo Vazio
     Abrir site
-    Não inserir dados
+    Campo Vazio
     Fechar Site
 
 Cenário 2: Inserir e-mail válido mas senha inválida
     Abrir site
-    Inserir e-mail válido mas senha inválida
+    E-mail Válido e Senha Inválida
     Fechar Site
 
 Cenário 3: Inserir e-mail inválido mas senha válida
     Abrir site
-    Inserir e-mail e senha inválidos
+    E-mail Inválido e Senha Válida
     Fechar Site
 
 Cenário 4: Inserir e-mail e senha inválidos
     Abrir site
-    Inserir e-mail e senha inválidos
+    Ambos Inválidos
     Fechar Site
 
 Cenário 5: Inserir e-mail e senha válidos
     Abrir site
-    Inserir e-mail e senha válidos
+    Ambos Válidos
     Fechar Site

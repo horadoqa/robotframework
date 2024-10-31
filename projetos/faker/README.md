@@ -1,6 +1,10 @@
 # Criando um projeto utilizando uma função com Faker
 
+Criando uma massa de teste de forma dinâmica
+
 https://pypi.org/project/robotframework-faker/
+
+https://github.com/tamnil/faker-br
 
 ## Instalando bibliotcas
 
@@ -8,7 +12,7 @@ https://pypi.org/project/robotframework-faker/
 pip install robotframework-faker
 ```
 
-## VErificando instalação do FAKER
+## Verificando instalação do FAKER
 
 ```bash
 pip show Faker
@@ -24,7 +28,7 @@ Requires: python-dateutil, typing-extensions
 Required-by: 
 ```
 
-## VErificando instalação do  ROBOT
+## Verificando instalação do  ROBOT
 
 ```bash
 pip show robotframework
@@ -41,7 +45,7 @@ Required-by: robotframework-assertion-engine, robotframework-browser, robotframe
 ```
 
 ```bash
-pip show robotframework-fakerpip show robotframework-faker
+pip show robotframework-faker
 Name: robotframework-faker
 Version: 5.0.0
 Summary: Robot Framework wrapper for faker, a fake test data generator
@@ -52,6 +56,20 @@ License: MIT
 Location: /home/rfahham/.local/lib/python3.10/site-packages
 Requires: faker, robotframework, wrapt
 Required-by: 
+```
+
+```bash
+pip show selenium
+Name: selenium
+Version: 4.26.0
+Summary: Official Python bindings for Selenium WebDriver
+Home-page: https://www.selenium.dev
+Author: 
+Author-email: 
+License: Apache 2.0
+Location: /usr/local/lib/python3.10/dist-packages
+Requires: certifi, trio, trio-websocket, typing_extensions, urllib3, websocket-client
+Required-by: robotframework-seleniumlibrary
 ```
 
 ## Configurando o robot.pythonpath

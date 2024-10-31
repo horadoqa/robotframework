@@ -85,12 +85,26 @@ https://pypi.org/project/webdriver-manager/3.0.0/
 sudo pip install webdriver-manager 
 ```
 
+### Instalando o Selenium 
+
+```bash
+pip install selenium
+```
+
 ## google-chrome
 
 ```bash
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && \
 sudo apt install ./google-chrome-stable_current_amd64.deb && \
 google-chrome --version
+```
+
+## Onde está instalado o google-chrome
+
+```bash
+which google-chrome
+
+/usr/bin/google-chrome
 ```
 
 ## chromedriver
@@ -103,7 +117,15 @@ unzip chromedriver-linux64.zip && \
 cd chromedriver-linux64 && \
 chmod +x chromedriver && \
 sudo cp chromedriver /usr/bin/ && \
+ls /usr/bin/ | grep chromedriver && \
 chromedriver --version
+```
+
+## Onde está instalado o chromedriver
+
+```bash
+which chromedriver
+/usr/bin/chromedriver
 ```
 
 Se o local do seu driver ainda não estiver em um diretório listado, você pode adicionar um novo diretório ao PATH:

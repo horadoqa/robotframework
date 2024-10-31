@@ -95,11 +95,15 @@ google-chrome --version
 
 ## chromedriver
 
+https://googlechromelabs.github.io/chrome-for-testing/
+
 ```bash
-wget https://storage.googleapis.com/chrome-for-testing-public/129.0.6668.58/linux64/chromedriver-linux64.zip
-unzip chromedriver-linux64.zip
-chmod +x chromedriver
-sudo cp chromedriver /usr/bin/
+wget https://storage.googleapis.com/chrome-for-testing-public/130.0.6723.91/linux64/chromedriver-linux64.zip && \
+unzip chromedriver-linux64.zip && \
+cd chromedriver-linux64 && \
+chmod +x chromedriver && \
+sudo cp chromedriver /usr/bin/ && \
+chromedriver --version
 ```
 
 Se o local do seu driver ainda não estiver em um diretório listado, você pode adicionar um novo diretório ao PATH:

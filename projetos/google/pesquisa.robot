@@ -5,7 +5,8 @@ Library    SeleniumLibrary
 ** Variables **
 
 ${url_google}    https://www.google.com/
-${pesquisar}    //*[@id="APjFqb"]
+# ${pesquisar}    //*[@id="APjFqb"]
+${pesquisar}    name=q
 ${confirmar}    //input[@class="gNO89b"]
 ${acessar}    //h3[contains(text(), "Robot Framework")][1]
 ${verificar}    //*[@id="getting-started"]

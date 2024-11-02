@@ -1,6 +1,12 @@
 # Separando ambientes no Robot Framework com .env
 
-![.env](docs/thumb_readme.png)
+## Vantagens
+
+- Facilidade de Configuração: Permite que você altere facilmente entre ambientes sem modificar o código do teste.
+- Segurança: Evita a exposição de credenciais diretamente no código.
+- Reusabilidade: Facilita o reuso de testes em diferentes contextos.
+
+Utilizando essa abordagem, você poderá gerenciar diferentes ambientes de forma eficiente e manter seu código de testes limpo e organizado.
 
 ## 👨‍💻 TECNOLOGIAS UTILIZADAS
 
@@ -22,12 +28,12 @@
 ## 🦾 INSTALANDO DEPENDÊNCIAS DO PROJETO
 
 ``` bash
-poetry install
+pip install poetry 
 ```
 
 ## Executando
 
-DEV (está definido)
+DEV (está definido em base.resource)
 
 ``` bash
 robot .

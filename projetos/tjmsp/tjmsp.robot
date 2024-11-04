@@ -1,14 +1,14 @@
-** Settings **
-Library  SeleniumLibrary
+*** Settings ***
+Library     SeleniumLibrary
+Library     OperatingSystem
 
-** Variables **
+*** Variables ***
 ${url}    https://ww2.tjmsp.jus.br/p_processos.htm
 ${Advogados}    //*[@id="home"]/div[2]/div/div[4]/div/button[2]
 ${oab}    //*[@id="home"]/div[2]/div/div[4]/div[1]/button[1]
-${numero-oab}    96259
 ${verificação}    //html/body[contains(text(), "The page cannot be displayed because an internal server error has occurred.")]
 
-** Keywords **
+*** Keywords ***
 Acessar a home
     Open Browser    ${url}    chrome
 
@@ -19,7 +19,9 @@ Clicar no Nro. da OAB
     Click Element    ${oab}    
 
 Clicar em Número da OAB
-    Input Text    //*[@id="txt_nro_oab"]    ${numero-oab}
+    ${Numero_OAB}=    Get Environment Variable    ENV_NUMERO_OAB
+    Should Not Be Empty    ${Numero_OAB}    A variável de ambiente ENV_NUMERO_OAB não está definida.
+    Input Text    //*[@id="txt_nro_oab"]    ${Numero_OAB}
 
 Escolher Estado
     Click Element   //*[@id="psq_oab"]/div[4]/div/select/option[20]
@@ -30,7 +32,7 @@ Clicar botão Enviar
 Verificação
     Element Should Be Visible    ${verificação}
 
-** Test Cases **
+*** Test Cases ***
 Cenário 1: Consulta de Processos
     Acessar a home
     Clicar Botão Advogados
@@ -40,6 +42,3 @@ Cenário 1: Consulta de Processos
     Clicar botão Enviar
     Verificação
     Close Browser
-
-
-

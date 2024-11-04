@@ -12,9 +12,9 @@ PDF para Texto
 *** Keywords ***
 O usuario confere os dados do PDF
 #Montando o caminho completo do arquivo PDF
-    ${home_dir}=        normalize path  ~
-    ${download_dir}=    Join Path   ${home_dir}     Downloads
-    @{items}=	        OperatingSystem.List Directory                 ${download_dir}       CTFL_foundation_page.pdf
+    ${home_dir}=        normalize path  /home/rfahham/projetos/robotframework/projetos
+    ${download_dir}=    Join Path   ${home_dir}     pdf
+    @{items}=	        OperatingSystem.List Directory                 ${download_dir}       robot.pdf
     ${file}=            Join Path    ${download_dir}    ${items[0]}
 
 #Extração dos Dados do PDF
@@ -29,4 +29,4 @@ O usuario confere os dados do PDF
     Log                ${stdout}
 
 #Conferência dos Dados Exportados
-    ${Texto}           Should Contain  ${stdout}  CTFL Foundation
+    ${Texto}           Should Contain  ${stdout}  Robot Framework

@@ -18,9 +18,9 @@ Read csv file to a list example test 2
     @{list}=  Read CSV File To List    ${path}
     
     # Acessa o nome, email e telefone da primeira pessoa (Joao)
-    ${nome} =    Get From List    ${list[1]}    0
-    ${email} =    Get From List    ${list[1]}    1
-    ${phone} =    Get From List    ${list[1]}    2
+    ${nome} =    Get From List    ${list[3]}    0
+    ${email} =    Get From List    ${list[3]}    1
+    ${phone} =    Get From List    ${list[3]}    2
     
     Log    Nome: ${nome}
     Log    Email: ${email}

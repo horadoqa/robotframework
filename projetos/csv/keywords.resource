@@ -16,16 +16,15 @@ ${QUANTIDADE}     5
 
 *** Keywords ***
 Cadastrar Usuário
+    # Lê o arquivo CSV e converte em uma lista de listas
+    @{list}=  Read CSV File To List    ${path}
+    
     WHILE    ${COUNT} < ${QUANTIDADE}
-        Log    Na primeira iteração o COUNT é: ${COUNT}
-
+        
         Given que o usuário acessou o site
         And escolheu um item da lista de frameworks
         And digitou algo sobre a escolha
         
-        # Lê o arquivo CSV e converte em uma lista de listas
-        @{list}=  Read CSV File To List    ${path}
-
         # Acessa o nome, email e telefone da linha ${i}
         ${name} =    Get From List    ${list[${COUNT}]}    0
         ${email} =    Get From List    ${list[${COUNT}]}    1

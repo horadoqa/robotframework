@@ -2,11 +2,12 @@
 Library  SeleniumLibrary
 
 ** Variables **
-
+${url}        https://robotframework.org/
+${browser}    chrome
 
 ** Keywords **
 Abrir Site
-    Open Browser    https://robotframework.org/  chrome
+    Open Browser      ${url}    ${browser}
     Log    O site do Robot Framework está funcionando!
 
 Fechar Site

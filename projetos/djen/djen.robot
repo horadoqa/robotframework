@@ -1,35 +1,34 @@
 ** Settings **
 Library  SeleniumLibrary
+Library     OperatingSystem
 
 ** Variables **
 ${url}    https://www.tjmsp.jus.br/diario-de-justica-eletronico-nacional-djen/
-${Processos}    //*[@id="nav-menu-item-564"]/a
-
-# (//a[@class="menu-link main-menu-link"])[3]   
-
-${consulta}    //*[@id="nav-menu-item-7618"]/a
-${advogados}    //*[@id="home"]/div[2]/div/div[4]/div/button[2]
-${numero-da-oab}    //*[@id="home"]/div[2]/div/div[4]/div[1]/button[1]
-${input-numero}    //*[@id="txt_nro_oab"]
-${oab}    96259
-${estado}    //*[@id="psq_oab"]/div[4]/div/select
+${Processos}    xpath=//a[span[text()='Processos']] 
+${consulta}    xpath=//a[span[text()='Consultas Processuais']]
+${advogados}    xpath=//button[text()='Advogados']
+${numero-da-oab}    xpath=//button[text()='Nro. da OAB']
+${input-numero}    id=txt_nro_oab
+${estado}    xpath=//select[@id='psq_oab']
 ${enviar}    //*[@id="btn_enviar"]
 
 ** Keywords **
 Acessar a home
     Open Browser    ${url}    chrome
+    Maximize Browser Window
+    Sleep    10s
 
 Clicar Botão Aceito
-    Click Element    //*[@id="cn-accept-cookie"]
-
-Clicar no Burguer
-    Click Element    //*[@id="header-mobile-section-2-row-0-column-0"]/div
+    Click Element    id=cn-accept-cookie
+    Sleep    10s
 
 Clicar em Processos
     Wait Until Element Is Visible    ${Processos}    30
-    Click Element    ${Processos} 
+    Click Element    ${Processos}
+    Sleep    60s
 
 Escolher Consultas processuais
+    Wait Until Element Is Visible    ${consulta}    30
     Click Element    ${consulta}
 
 Clicar em Advogados
@@ -39,10 +38,13 @@ Clicar em Número OAB
     Click Element    ${numero-da-oab}
 
 Digitar número OAB
-    Input Text    ${input-numero}    ${oab}
+    ${Numero_OAB}=    Get Environment Variable    ENV_NUMERO_OAB
+    Should Not Be Empty    ${Numero_OAB}    A variável de ambiente ENV_NUMERO_OAB não está definida.
+    Input Text    ${input-numero}    ${Numero_OAB}
+    Sleep    5s
 
 Escolher Estado
-    Input Text    ${estado}    RJ
+    Select From List    ${estado}    RJ
 
 Clicar em Enviar
     Click Element    ${enviar}
@@ -51,14 +53,13 @@ Clicar em Enviar
 Cenário 1: Consulta de Processos
     Acessar a home
     Clicar Botão Aceito
-    Clicar no Burguer
     Clicar em Processos
-    # Escolher Consultas processuais
-    # Clicar em Advogados
-    # Clicar em Número OAB
-    # Digitar número OAB
-    # Escolher Estado
-    # Clicar em Enviar
+    Escolher Consultas processuais
+    Clicar em Advogados
+    Clicar em Número OAB
+    Digitar número OAB
+    Escolher Estado
+    Clicar em Enviar
     Close Browser
 
 

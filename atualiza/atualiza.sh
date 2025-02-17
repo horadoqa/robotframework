@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Definir variáveis para URL e arquivos
-CHROME_DRIVER_URL="https://storage.googleapis.com/chrome-for-testing-public/132.0.6834.110/linux64/chromedriver-linux64.zip"
+CHROME_DRIVER_URL="https://storage.googleapis.com/chrome-for-testing-public/132.0.6834.160/linux64/chromedriver-linux64.zip"
 TEMP_DIR="/tmp/chromedriver-install"
 INSTALL_DIR="/usr/bin"
 

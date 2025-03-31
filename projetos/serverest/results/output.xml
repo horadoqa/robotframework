@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.10.12 on linux)" generated="2025-03-27T20:25:03.051345" rpa="false" schemaversion="5">
+<suite id="s1" name="Robotframework" source="/home/rfahham/projetos/robotframework">
+<suite id="s1-s1" name="Projetos" source="/home/rfahham/projetos/robotframework/projetos">
+<suite id="s1-s1-s1" name="Serverest" source="/home/rfahham/projetos/robotframework/projetos/serverest">
+<suite id="s1-s1-s1-s1" name="Campos-Obrigatorios" source="/home/rfahham/projetos/robotframework/projetos/serverest/campos-obrigatorios">
+<suite id="s1-s1-s1-s1-s1" name="Campos-Obrigatorios" source="/home/rfahham/projetos/robotframework/projetos/serverest/campos-obrigatorios/campos-obrigatorios.robot">
+<test id="s1-s1-s1-s1-s1-t1" name="Cenário: Login Serverest com ERRO" line="5">
+<kw name="Open site" owner="keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-27T20:25:03.234845" level="INFO">Opening browser 'chrome' to base url 'https://front.serverest.dev/login'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-27T20:25:03.234484" elapsed="3.757149"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-27T20:25:11.992786" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-27T20:25:06.991995" elapsed="5.001795"/>
+</kw>
+<status status="PASS" start="2025-03-27T20:25:03.233646" elapsed="8.760946"/>
+</kw>
+<kw name="Email" owner="keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-27T20:25:11.998283" level="INFO">Typing text '' into text field '//*[@id="email"]'.</msg>
+<arg>${EMAIL}</arg>
+<arg>text=</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-27T20:25:11.997193" elapsed="0.122095"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-27T20:25:17.120326" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-27T20:25:12.119655" elapsed="5.001111"/>
+</kw>
+<status status="PASS" start="2025-03-27T20:25:11.996234" elapsed="5.124868"/>
+</kw>
+<kw name="Password" owner="keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-27T20:25:17.122834" level="INFO">Typing text '' into text field '//*[@id="password"]'.</msg>
+<arg>${PASSWORD}</arg>
+<arg>text=</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-27T20:25:17.122288" elapsed="0.097131"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-27T20:25:22.220357" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-27T20:25:17.219708" elapsed="5.000996"/>
+</kw>
+<status status="PASS" start="2025-03-27T20:25:17.121630" elapsed="5.099334"/>
+</kw>
+<kw name="Entrar" owner="keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-27T20:25:22.222839" level="INFO">Clicking element '//*[@id="root"]/div/div/form/button'.</msg>
+<arg>${BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-27T20:25:22.222342" elapsed="0.086690"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-27T20:25:27.310250" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-27T20:25:22.309496" elapsed="5.001891"/>
+</kw>
+<status status="PASS" start="2025-03-27T20:25:22.221746" elapsed="5.090632"/>
+</kw>
+<kw name="Verificar" owner="keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${VERIFICAR_EMAIL}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-27T20:25:27.317530" elapsed="0.038274"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-03-27T20:25:27.380542" level="INFO">Element 'xpath=//*[contains(text(), "Password é obrigatório")]' is displayed.</msg>
+<arg>${VERIFICAR_PASSWORD}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-27T20:25:27.356154" elapsed="0.024701"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-27T20:25:32.381744" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-27T20:25:27.381160" elapsed="5.001048"/>
+</kw>
+<status status="PASS" start="2025-03-27T20:25:27.315461" elapsed="5.067121"/>
+</kw>
+<kw name="Fechar site" owner="keywords">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-03-27T20:25:32.384479" elapsed="0.062800"/>
+</kw>
+<status status="PASS" start="2025-03-27T20:25:32.383664" elapsed="0.063879"/>
+</kw>
+<status status="PASS" start="2025-03-27T20:25:03.232632" elapsed="29.215241"/>
+</test>
+<status status="PASS" start="2025-03-27T20:25:03.091652" elapsed="29.357887"/>
+</suite>
+<status status="PASS" start="2025-03-27T20:25:03.086725" elapsed="29.365048"/>
+</suite>
+<status status="PASS" start="2025-03-27T20:25:03.082336" elapsed="29.371441"/>
+</suite>
+<status status="PASS" start="2025-03-27T20:25:03.078775" elapsed="29.377497"/>
+</suite>
+<status status="PASS" start="2025-03-27T20:25:03.056002" elapsed="29.401915"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robotframework">Robotframework</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Projetos">Robotframework.Projetos</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Serverest">Robotframework.Projetos.Serverest</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="Campos-Obrigatorios">Robotframework.Projetos.Serverest.Campos-Obrigatorios</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1-s1" name="Campos-Obrigatorios">Robotframework.Projetos.Serverest.Campos-Obrigatorios.Campos-Obrigatorios</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

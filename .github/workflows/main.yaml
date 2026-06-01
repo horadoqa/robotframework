@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     container:
-      image: ppodgorsek/robot-framework:latest
+      image: horadoqa/robot:v1
       options: --user root
 
     steps:

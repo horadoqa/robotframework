@@ -1,7 +1,7 @@
-** Settings **
+*** Settings ***
 Library    SeleniumLibrary
 
-** Variables **
+*** Variables ***
 
 ${URL}          https://front.serverest.dev/cadastrarusuarios
 ${NOME}         //*[@id="nome"]
@@ -11,7 +11,7 @@ ${ADMIN}        //*[@id="root"]/div/div/form/div[4]/div/label
 ${BUTTON}       //*[@id="root"]/div/div/form/div[5]/button
 ${VERIFICAR}    xpath=//*[contains(text(), "Este é seu sistema para administrar seu ecommerce.")]
 
-** Keywords **
+*** Keywords ***
 Open site    
     Open Browser    ${URL}    chrome
     Sleep    5s

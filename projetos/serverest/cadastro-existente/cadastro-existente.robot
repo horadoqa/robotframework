@@ -1,7 +1,7 @@
-** Settings **
+*** Settings ***
 Resource    keywords.resource
 
-** Test Cases **
+*** Test Cases ***
 Cenário: Cadastro Serverest E-mail Existente
     Open site
     Nome

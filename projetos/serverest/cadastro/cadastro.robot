@@ -1,7 +1,7 @@
-** Settings **
+*** Settings ***
 Resource    keywords.resource
 
-** Test Cases **
+*** Test Cases ***
 Cenário: Realizando Cadastro Serverest
     Open site
     Nome

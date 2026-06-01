@@ -1,7 +1,7 @@
-** Settings **
+*** Settings ***
 Library    SeleniumLibrary
 
-** Variables **
+*** Variables ***
 ${URL}          https://front.serverest.dev/cadastrarusuarios
 ${NOME}         //*[@id="nome"]
 ${EMAIL}        //*[@id="email"]
@@ -11,7 +11,7 @@ ${BUTTON}       //*[@id="root"]/div/div/form/div[5]/button
 ${VERIFICAR}    xpath=//*[contains(text(), "Este email já está sendo usado")]
 
 
-** Keywords **
+*** Keywords ***
 Open site    
     Open Browser    ${URL}    chrome
     Sleep    5s

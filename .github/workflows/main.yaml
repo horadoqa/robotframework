@@ -10,21 +10,20 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
-    container:
-      image: horadoqa/robot:v1
-      options: --user root
-
     steps:
-      - name: Checkout do código
-        uses: actions/checkout@v4
-      
-      - name: Fix permissions
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
         run: |
-          chmod -R 777 /github/workspace
+          sudo apt-get update
+          sudo apt-get install -y python3 python3-pip
 
-      - name: Listar arquivos (debug opcional)
-        run: ls -R
+          pip3 install -r requirements.txt
 
-      - name: Executar testes Robot Framework
+          wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+          sudo dpkg -i google-chrome-stable_current_amd64.deb || true
+          sudo apt-get install -f -y
+
+      - name: Run tests
         run: |
           robot projetos/robot/robot.robot

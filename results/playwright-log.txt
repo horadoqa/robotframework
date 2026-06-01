@@ -1,0 +1,77 @@
+{"level":30,"time":"2026-06-01T18:29:43.252Z","pid":2890169,"hostname":"DESKTOP-059018K","msg":"Listening on 37233"}
+(node:2890169) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2026-06-01T18:29:43.363Z","pid":2890169,"hostname":"DESKTOP-059018K","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-06-01T18:29:43.531Z","pid":2890169,"hostname":"DESKTOP-059018K","msg":"Adding browser to stack: chromium, version: 130.0.6723.31"}
+{"level":30,"time":"2026-06-01T18:29:43.532Z","pid":2890169,"hostname":"DESKTOP-059018K","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-06-01T18:29:43.532Z","pid":2890169,"hostname":"DESKTOP-059018K","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-06-01T18:29:43.544Z","pid":2890169,"hostname":"DESKTOP-059018K","msg":"Start of node method newContext"}
+{"level":30,"time":"2026-06-01T18:29:43.545Z","pid":2890169,"hostname":"DESKTOP-059018K","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2026-06-01T18:29:43.546Z","pid":2890169,"hostname":"DESKTOP-059018K","msg":"Trace file: "}
+{"level":30,"time":"2026-06-01T18:29:43.559Z","pid":2890169,"hostname":"DESKTOP-059018K","msg":"Changed active context"}
+{"level":30,"time":"2026-06-01T18:29:43.559Z","pid":2890169,"hostname":"DESKTOP-059018K","msg":"End of node method newContext"}
+{"level":30,"time":"2026-06-01T18:29:43.572Z","pid":2890169,"hostname":"DESKTOP-059018K","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-06-01T18:29:43.572Z","pid":2890169,"hostname":"DESKTOP-059018K","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2026-06-01T18:29:43.657Z","pid":2890169,"hostname":"DESKTOP-059018K","msg":"Video path: undefined"}
+{"level":30,"time":"2026-06-01T18:29:43.657Z","pid":2890169,"hostname":"DESKTOP-059018K","msg":"Changed active page"}
+{"level":30,"time":"2026-06-01T18:29:44.504Z","pid":2890169,"hostname":"DESKTOP-059018K","msg":"End of node method newPage"}
+{"level":30,"time":"2026-06-01T18:29:44.511Z","pid":2890169,"hostname":"DESKTOP-059018K","msg":"Start of node method click"}
+{"level":30,"time":"2026-06-01T18:29:44.512Z","pid":2890169,"hostname":"DESKTOP-059018K","msg":"Strict mode is enabled, find Locator with css=#user in page."}
+{"level":30,"time":"2026-06-01T18:29:44.755Z","pid":2890169,"hostname":"DESKTOP-059018K","msg":"End of node method click"}
+{"level":30,"time":"2026-06-01T18:29:44.759Z","pid":2890169,"hostname":"DESKTOP-059018K","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-06-01T18:29:44.759Z","pid":2890169,"hostname":"DESKTOP-059018K","msg":"Strict mode is enabled, find Locator with css=#user in page."}
+{"level":30,"time":"2026-06-01T18:29:44.773Z","pid":2890169,"hostname":"DESKTOP-059018K","msg":"End of node method fillText"}
+{"level":30,"time":"2026-06-01T18:29:44.778Z","pid":2890169,"hostname":"DESKTOP-059018K","msg":"Start of node method click"}
+{"level":30,"time":"2026-06-01T18:29:44.778Z","pid":2890169,"hostname":"DESKTOP-059018K","msg":"Strict mode is enabled, find Locator with css=#email in page."}
+{"level":30,"time":"2026-06-01T18:29:44.939Z","pid":2890169,"hostname":"DESKTOP-059018K","msg":"End of node method click"}
+{"level":30,"time":"2026-06-01T18:29:44.943Z","pid":2890169,"hostname":"DESKTOP-059018K","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-06-01T18:29:44.944Z","pid":2890169,"hostname":"DESKTOP-059018K","msg":"Strict mode is enabled, find Locator with css=#email in page."}
+{"level":30,"time":"2026-06-01T18:29:44.954Z","pid":2890169,"hostname":"DESKTOP-059018K","msg":"End of node method fillText"}
+{"level":30,"time":"2026-06-01T18:29:44.959Z","pid":2890169,"hostname":"DESKTOP-059018K","msg":"Start of node method click"}
+{"level":30,"time":"2026-06-01T18:29:44.959Z","pid":2890169,"hostname":"DESKTOP-059018K","msg":"Strict mode is enabled, find Locator with css=#password in page."}
+{"level":30,"time":"2026-06-01T18:29:45.011Z","pid":2890169,"hostname":"DESKTOP-059018K","msg":"End of node method click"}
+{"level":30,"time":"2026-06-01T18:29:45.015Z","pid":2890169,"hostname":"DESKTOP-059018K","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-06-01T18:29:45.015Z","pid":2890169,"hostname":"DESKTOP-059018K","msg":"Strict mode is enabled, find Locator with css=#password in page."}
+{"level":30,"time":"2026-06-01T18:29:45.029Z","pid":2890169,"hostname":"DESKTOP-059018K","msg":"End of node method fillText"}
+{"level":30,"time":"2026-06-01T18:29:45.037Z","pid":2890169,"hostname":"DESKTOP-059018K","msg":"Start of node method click"}
+{"level":30,"time":"2026-06-01T18:29:45.037Z","pid":2890169,"hostname":"DESKTOP-059018K","msg":"Strict mode is enabled, find Locator with css=#btnRegister in page."}
+{"level":30,"time":"2026-06-01T18:29:45.113Z","pid":2890169,"hostname":"DESKTOP-059018K","msg":"End of node method click"}
+{"level":30,"time":"2026-06-01T18:29:45.120Z","pid":2890169,"hostname":"DESKTOP-059018K","msg":"Start of node method click"}
+{"level":30,"time":"2026-06-01T18:29:45.120Z","pid":2890169,"hostname":"DESKTOP-059018K","msg":"Strict mode is enabled, find Locator with css=#swal2-title in page."}
+{"level":30,"time":"2026-06-01T18:29:45.596Z","pid":2890169,"hostname":"DESKTOP-059018K","msg":"End of node method click"}
+{"level":30,"time":"2026-06-01T18:29:45.602Z","pid":2890169,"hostname":"DESKTOP-059018K","msg":"Start of node method click"}
+{"level":30,"time":"2026-06-01T18:29:45.602Z","pid":2890169,"hostname":"DESKTOP-059018K","msg":"Strict mode is enabled, find Locator with text=\"OK\" in page."}
+{"level":30,"time":"2026-06-01T18:29:45.673Z","pid":2890169,"hostname":"DESKTOP-059018K","msg":"End of node method click"}
+{"level":30,"time":"2026-06-01T18:29:45.679Z","pid":2890169,"hostname":"DESKTOP-059018K","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2026-06-01T18:29:45.686Z","pid":2890169,"hostname":"DESKTOP-059018K","msg":"Removed page=44698dc5-0454-4277-a370-3d36c1e25395 from context=1fd3d70b-d247-4e26-8742-3261b30c796f page stack"}
+{"level":30,"time":"2026-06-01T18:29:45.733Z","pid":2890169,"hostname":"DESKTOP-059018K","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/home/rfahham/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:10982:15)
+    at PlaywrightServer.getActiveBrowser (/home/rfahham/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:11598:59)
+    at PlaywrightServer.setTimeout (/home/rfahham/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:11837:57)
+    at Object.onReceiveHalfClose (/home/rfahham/.local/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/rfahham/.local/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/rfahham/.local/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (/home/rfahham/.local/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2026-06-01T18:29:45.806Z","pid":2890169,"hostname":"DESKTOP-059018K","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-06-01T18:29:45.807Z","pid":2890169,"hostname":"DESKTOP-059018K","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/home/rfahham/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:10982:15)
+    at PlaywrightServer.getActiveBrowser (/home/rfahham/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:11598:59)
+    at PlaywrightServer.setTimeout (/home/rfahham/.local/lib/python3.10/site-packages/Browser/wrapper/index.js:11837:57)
+    at Object.onReceiveHalfClose (/home/rfahham/.local/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/rfahham/.local/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/rfahham/.local/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (/home/rfahham/.local/lib/python3.10/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2026-06-01T18:29:45.828Z","pid":2890169,"hostname":"DESKTOP-059018K","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-06-01T18:29:45.828Z","pid":2890169,"hostname":"DESKTOP-059018K","msg":"End of node method getBrowserCatalog"}

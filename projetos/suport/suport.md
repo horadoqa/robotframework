@@ -8,22 +8,32 @@ O Google Chrome
 
 ```bash
 google-chrome --version
-Google Chrome 130.0.6723.91
+Google Chrome 148.0.7778.215
 ```
 
 O ChromeDriver
 
 ```bash
 chromedriver --version
-ChromeDriver 130.0.6723.91 (53ac076783696778ecc8f360ea31765c29c240ad-refs/branch-heads/6723@{#1517})
+ChromeDriver 148.0.7778.178 (d096af1c9e98c45c3596e59620622b1a049bfecb-refs/branch-heads/7778@{#3196})
 ```
 
 O Selinium
 
 ```bash
 pip show selenium
+
+pip show selenium
 Name: selenium
-Version: 4.26.0
+Version: 4.25.0
+Summary: Official Python bindings for Selenium WebDriver
+Home-page: https://www.selenium.dev
+Author: 
+Author-email: 
+License: Apache 2.0
+Location: /usr/local/lib/python3.10/dist-packages
+Requires: certifi, trio, trio-websocket, typing_extensions, urllib3, websocket-client
+Required-by: robotframework-seleniumlibrary
 ```
 
 Verificando se o chromedriver está em execução

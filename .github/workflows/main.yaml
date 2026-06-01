@@ -30,4 +30,4 @@ jobs:
           echo "VERSAO DO CHROME!!"
           echo "------------------"
           google-chrome --version
-          # robot robot.robot
+          robot projetos/robot/robot.robot

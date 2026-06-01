@@ -3,7 +3,7 @@
 A Partir de um arquivo já preparado
 
 ```bash
-robot <nomedo arquivo>.robot
+robot <nome do arquivo>.robot
 ```
 
 Criando pasta com os Resultados

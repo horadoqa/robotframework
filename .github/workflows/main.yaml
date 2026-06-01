@@ -1,33 +1,25 @@
-name: Continuos Integration
+name: Continuous Integration
 
-# on: pull_request
-# on: [pull_request, push, issues, issue_comment]
-on: 
+on:
   workflow_dispatch:
   push:
     branches:
       - main
 
 jobs:
-  Continuos-Integration:
+  test:
     runs-on: ubuntu-latest
+
+    container:
+      image: ppodgorsek/robot-framework:latest
+
     steps:
-      - name: Copiando o código para ser executado
+      - name: Checkout do código
         uses: actions/checkout@v4
 
-      - name: Instalação
+      - name: Listar arquivos (debug opcional)
+        run: ls -R
+
+      - name: Executar testes Robot Framework
         run: |
-          sudo apt-get update
-          sudo apt install python3
-          sudo apt install wget
-          pip install robotframework
-          pip install robotframework-seleniumlibrary
-          pip install webdriver-manager
-          wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-          sudo dpkg -i google-chrome-stable_current_amd64.deb
-          sudo apt-get install -f
-          echo "------------------"
-          echo "VERSAO DO CHROME!!"
-          echo "------------------"
-          google-chrome --version
           robot projetos/robot/robot.robot

@@ -1,2 +1,6 @@
 venv
 .env
+results
+logs
+output.xml
+report.html

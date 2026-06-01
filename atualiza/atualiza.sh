@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Definir variáveis para URL e arquivos
-CHROME_DRIVER_URL="https://storage.googleapis.com/chrome-for-testing-public/132.0.6834.160/linux64/chromedriver-linux64.zip"
+CHROME_DRIVER_URL="https://storage.googleapis.com/chrome-for-testing-public/146.0.7680.80/linux64/chromedriver-linux64.zip"
 TEMP_DIR="/tmp/chromedriver-install"
 INSTALL_DIR="/usr/bin"
 
@@ -59,4 +59,20 @@ rm -rf "$TEMP_DIR"
 
 # Verificando a versão do chromedriver instalado
 print_message "INSTALAÇÃO CONCLUÍDA COM SUCESSO !!!"
+
 chromedriver --version
+
+google-chrome --version
+
+# A versão do chromedriver deve ser compatível com a versão do Google Chrome instalada no sistema. Certifique-se de que ambos estejam atualizados para evitar problemas de compatibilidade.
+
+chromedriver --version == Google Chrome --version
+
+# chromedriver --version
+# ChromeDriver 146.0.7680.80 (f08938029c887ea624da7a1717059788ed95034d-refs/branch-heads/7680_65@{#34})
+
+
+# google-chrome --version
+# Google Chrome 146.0.7680.80 
+
+# Faca essa comparação para garantir que a versão do chromedriver seja compatível com a versão do Google Chrome instalada. Se as versões não forem compatíveis, você pode enfrentar problemas ao executar testes automatizados com o Selenium.

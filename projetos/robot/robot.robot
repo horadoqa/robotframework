@@ -8,7 +8,7 @@ ${expected_title}    Robot Framework
 
 *** Keywords ***
 Abrir Site
-    Open Browser      ${url}    ${browser}
+    Open Browser      ${url}    ${browser} 
     Log    O site do Robot Framework está funcionando!
     Sleep    5s
 
